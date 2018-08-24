@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Curriculum | Labo 2</title>
 </head>
+
 <body>
     <header>
-        <h1>
+        <h1 style=text-align:center>
             Curriculum Vitae
         </h1>
     </header>
-    
+    <section>
+        <form action="" method="">
+            <fieldset>
+                <legend>Información Personal:</legend>
+                Primer Nombre:
+                <input type="text" placeholder="Alejandro" required="[A-Za-z]"> 
+                Primer Apellido:
+                <input type="text" placeholder="Gomez,Escamilla,etc" required="[A-Za-z]"> 
+                DUI:
+                <input type="text" name="dui" id="dui" pattern="[0][0-9]{7}-[0-9]">
+                Email:
+                <input type="email" placeholder="juanq@gmail.com"> 
+                Gender:
+                
+                M<input type="radio" name="genero" contextmenu="Gender"> 
+                
+                F<input type="radio" name="genero" contextmenu="Gender"> 
+                <br> 
+                Numero de Contacto:
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
+                Fecha de Nacimiento:
+                <input type="date">
+
+                <select>
+                    <option>Soltero</option>
+                    <option>Casado</option>
+                    <option>Divorciado</option>
+                </select>
+                Imagen:
+                <input type="file" name="perfil" id="perfil">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Experiencia de Trabajo</legend>
+                <textarea name="Experiencia" id="ExpTrabajo" cols="255" rows="10" placeholder="Escriba una breve descripcion de su actividad laboral"></textarea>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Experiencia Academica</legend>
+                <textarea name="Academica" id="expAcademica" cols="255" rows="10" placeholder="Escriba una breve descripcion de su Experiencia Academica"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Entrenamiento Futuro</legend>
+                <br>
+                <fieldset>
+                    <legend>Lenguajes de Programación</legend>
+                    Java
+                    <input type="checkbox" name="Java" id="java"> C#
+                    <input type="checkbox" name="C#" id="C#"> Python
+                    <input type="checkbox" name="Python" id="Python"> C++
+                    <input type="checkbox" name="C++" id="cpp">
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Tecnologias Web</legend>
+                    HTML5
+                    <input type="checkbox" name="Java" id="java"> CSS/CSS3#
+                    <input type="checkbox" name="css#" id="css3"> materialize CSS
+                    <input type="checkbox" name="materialize" id="mater"> Node.js
+                    <input type="checkbox" name="node" id="nodejs"> Spring MVC
+                    <input type="checkbox" name="spring" id="sp">
+                </fieldset>
+
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="button" value="Cancelar">
+        </form>
+    </section>
 </body>
+
 </html>
